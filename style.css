@@ -1,8 +1,8 @@
+/* 전체 배경 및 텍스트 중앙 정렬 */
 body {
     font-family: Arial, sans-serif;
-    background-color: #f4f4f9;
+    background-color: #f9f9f9;
     margin: 0;
-    padding: 0;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -10,44 +10,49 @@ body {
     text-align: center;
 }
 
+/* 컨테이너 스타일 */
 .container {
-    text-align: center;
-    background: #ffffff;
-    padding: 40px 60px;
+    background-color: #ffffff;
     border-radius: 15px;
-    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
-    max-width: 500px;
-    width: 100%;
-}
-
-h1 {
-    font-size: 32px;
-    color: #333;
-    margin-bottom: 20px;
-}
-
-p {
-    font-size: 20px;
-    color: #555;
-    margin-bottom: 20px;
-}
-
-input[type="number"] {
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+    padding: 30px 50px;
+    max-width: 400px;
     width: 90%;
-    padding: 15px;
+}
+
+/* 제목 스타일 */
+h1 {
+    font-size: 28px;
+    color: #333333;
+    margin-bottom: 20px;
+}
+
+/* 설명 텍스트 스타일 */
+p {
+    font-size: 18px;
+    color: #666666;
+    margin-bottom: 15px;
+}
+
+/* 입력 필드 스타일 */
+input[type="number"] {
+    width: 100%;
+    padding: 12px;
     margin-bottom: 20px;
     border: 2px solid #ddd;
-    border-radius: 10px;
-    font-size: 18px;
+    border-radius: 8px;
+    font-size: 16px;
+    box-sizing: border-box;
 }
 
+/* 버튼 스타일 */
 button {
-    padding: 15px 30px;
-    font-size: 18px;
-    color: #fff;
+    padding: 12px 20px;
+    font-size: 16px;
+    color: #ffffff;
     background-color: #007BFF;
     border: none;
-    border-radius: 10px;
+    border-radius: 8px;
     cursor: pointer;
     transition: background-color 0.3s ease;
 }
@@ -56,9 +61,10 @@ button:hover {
     background-color: #0056b3;
 }
 
+/* 결과 출력 스타일 */
 .output {
-    margin-top: 30px;
-    font-size: 24px;
-    color: #333;
+    margin-top: 20px;
+    font-size: 20px;
     font-weight: bold;
+    color: #333333;
 }
