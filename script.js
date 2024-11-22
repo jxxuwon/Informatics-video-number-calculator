@@ -30,9 +30,16 @@ function calculateResults() {
     }
 
     output.innerHTML = `
-        <p>결과:</p>
+        <a>결과:</a>
         <p>${results[0]}</p>
         <p>${results[1]}</p>
         <p>${results[2]}</p>
     `;
 }
+
+// 엔터 키 입력 감지
+document.getElementById("numberInput").addEventListener("keypress", function (event) {
+    if (event.key === "Enter") {
+        calculateResults();
+    }
+});
